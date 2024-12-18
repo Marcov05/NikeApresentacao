@@ -1,0 +1,139 @@
+.estilo01 {
+  max-width: 1600px;
+  padding: 150px 20px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 100px;
+}
+.frase {
+  color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+}
+
+.subtitulo {
+  color: #330000;
+  flex-wrap: wrap;
+  align-self: center;
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+
+.estilo-txt {
+  color: #f7f7f7;
+  font-size: 25px;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.after::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: #1f1f1f;
+  margin: 100px auto;
+}
+
+.contato {
+  background-color: #000000;
+  max-width: 100%;
+  padding: 0px 20px;
+  margin: 0px auto;
+  gap: 100px;
+}
+
+.rodape-titulo {
+  color: #1f1f1f;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0px;
+  padding-top: 100px;
+  justify-content: center;
+  font-size: 7rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+.rodape-subtitulo {
+  padding: 90px 0px;
+  color: #1f1f1f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+  align-items: center;
+}
+
+.rodape-subtitulo h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.rodape-subtitulo h3:hover {
+  color: #303030;
+  transition: 0.3s;
+}
+
+.direitos {
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+  color: #303030;
+}
+.direitos a {
+  color: #303030;
+  padding: 0px 5px;
+}
+
+@media (max-width: 1300px) {
+  .subtitulo {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .estilo-txt {
+    font-size: 20px;
+    line-height: 25px;
+    align-items: start;
+  }
+  .rodape-subtitulo h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .rodape-subtitulo h3 {
+    font-size: 15px;
+  }
+  .subtitulo {
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .estilo01 {
+    grid-template-columns: 1fr;
+    padding-top: 0px;
+  }
+  .estilo-txt {
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 600px) {
+  .frase {
+    font-size: 10px;
+  }
+  .rodape-titulo {
+    padding-top: 20px;
+    font-size: 4rem;
+  }
+  .rodape-subtitulo {
+    grid-template-columns: 1fr;
+    padding: 30px 0px;
+  }
+  .rodape-subtitulo h3 {
+    padding: 5px;
+  }
+}
